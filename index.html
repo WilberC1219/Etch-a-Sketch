@@ -1,14 +1,44 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Etch a sketch</title>
-		<link src="styles.css" rel="sylesheet">
+		<link href="styles.css" rel="stylesheet">
+		<script type="text/javascript" src="etch-a-sketch.js" defer></script>
 	</head>
 	<body>
-
-		<!-- Sketch area -->
 		<main>
+			<header>
+				<h1>Etch A Sketch</h1>
+			</header>
+			<section>
+				<!-- Sketch area -->
+				<div class="sketch-zone" id="sketch-zone"></div>
 
+			</section>
 		</main>
+
+		<section class="grid-options">
+			<div class="grid-size">
+				<label >Grid size: <span name="grid-size-span"></span></label>
+				<input name="grid-size-input" type="range" min="1" max="64" value="16">
+			</div>
+
+			<div class="rgb-mode-options">
+				<legend>RBG Mode</legend>
+
+				<fieldset>
+					<div>
+						<label for="on-choice">On</label>
+						<input type="radio" id="on-choice" name="rgb-mode-choice" value="on">
+					</div>
+					<div>
+						<label for="off-choice">Off</label>
+						<input type="radio" id="off-choice" name="rgb-mode-choice" value="off">
+					</div>	
+				</fieldset>
+
+			</div>
+		</section>
+
 	</body>
 </html>
