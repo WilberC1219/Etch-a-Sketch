@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
   }
 
 *, *:before, *:after {
@@ -19,10 +20,6 @@ main{
    align-items: center;
 }
 
-button{
-
-}
-
 fieldset{
     border-style: none;
     display: inline-flex;
@@ -31,10 +28,22 @@ fieldset{
 header{
     display: flex;
     justify-content: center;
-    
+    font-size: 36px;
     margin-top: 27px;
 }
 
+button{
+  border: 1px solid black;
+  border-radius: 9px;
+  background-color: #B6B6B6;
+  font-weight: 700;
+  width: 100px;
+  height: 40px;
+}
+
+button:hover{
+  background-color: #DADADA;
+}
 
 .sketch-zone{
     display: flex;
@@ -64,34 +73,56 @@ header{
     background-color: black;
 }
 
-.grid-cell-rgb{
-  background-color: red;
-}
-
 .grid-options{
+  font-weight: 700;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 25px;
 }
 
-.grid-size, .rgb-mode-options{
+.grid-size, .mode-options{
     width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     flex-shrink: 0;
 }
 
+.mode-options, .grid-size{
+  background-color: #B6B6B6;
+  border-radius: 8px;
+  border: 1px solid black;
+  gap:14px;
+  padding:5px;
+}
+
+
+.mode-choice{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+legend{
+  justify-self: flex-start;
+}
+
+input[type=radio]{
+  accent-color: black;
+}
 input[name=grid-size-input]{
-    width: 150px;
+    width: 150px;;
 }
 input[type=range] {
     height: 32px;
     -webkit-appearance: none;
-    margin: 10px 0;
+    margin: 0;
     width: 100%;
-    background-color: #fffdd0e5;
+    background-color: #B6B6B6;
   }
   input[type=range]:focus {
     outline: none;
@@ -102,7 +133,7 @@ input[type=range] {
     cursor: pointer;
     animate: 0.2s;
     box-shadow: 0px 0px 0px #000000;
-    background: #B6B6B6;
+    background: #dfdfdf;
     border-radius: 25px;
     border: 1px solid #8A8A8A;
   }
@@ -118,7 +149,7 @@ input[type=range] {
     margin-top: -5px;
   }
   input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #B6B6B6;
+    background: #dfdfdf;
   }
   input[type=range]::-moz-range-track {
     width: 100%;
@@ -126,7 +157,7 @@ input[type=range] {
     cursor: pointer;
     animate: 0.2s;
     box-shadow: 0px 0px 0px #000000;
-    background: #B6B6B6;
+    background: #dfdfdf;
     border-radius: 25px;
     border: 1px solid #8A8A8A;
   }
@@ -155,7 +186,7 @@ input[type=range] {
     box-shadow: 0px 0px 0px #000000;
   }
   input[type=range]::-ms-fill-upper {
-    background: #B6B6B6;
+    background: #dfdfdf;
     border: 1px solid #8A8A8A;
     border-radius: 50px;
     box-shadow: 0px 0px 0px #000000;
@@ -167,13 +198,13 @@ input[type=range] {
     height: 24px;
     width: 35px;
     border-radius: 6px;
-    background: #DADADA;
+    background: #dfdfdf;
     cursor: pointer;
   }
   input[type=range]:focus::-ms-fill-lower {
-    background: #B6B6B6;
+    background: #dfdfdf;
   }
   input[type=range]:focus::-ms-fill-upper {
-    background: #B6B6B6;
+    background: #dfdfdf;
   }
   
