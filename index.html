@@ -20,23 +20,31 @@
 		<section class="grid-options">
 			<div class="grid-size">
 				<label >Grid size: <span name="grid-size-span"></span></label>
-				<input name="grid-size-input" type="range" min="1" max="64" value="16">
+				<input class ="slider" name="grid-size-input" type="range" min="1" max="64" value="16">
 			</div>
 
-			<div class="rgb-mode-options">
-				<legend>RBG Mode</legend>
+			<div class="mode-options">
+				<legend>Color Mode</legend>
 
 				<fieldset>
-					<div>
-						<label for="on-choice">On</label>
-						<input type="radio" id="on-choice" name="rgb-mode-choice" value="on">
+					<div class="mode-choice">
+						<label for="rgb-choice">rgb</label>
+						<input type="radio" id="rgb-choice" name="mode-choice" value="rgb">
 					</div>
-					<div>
-						<label for="off-choice">Off</label>
-						<input type="radio" id="off-choice" name="rgb-mode-choice" value="off">
+					<div class="mode-choice">
+						<label for="normal-choice">normal</label>
+						<input type="radio" id="normal-choice" name="mode-choice" value="normal">
+					</div>	
+					<div class="mode-choice">
+						<label for="eraser-choice">eraser</label>
+						<input type="radio" id="eraser-choice" name="mode-choice" value="eraser">
 					</div>	
 				</fieldset>
 
+			</div>
+
+			<div>
+				<button name="reset">reset</button>
 			</div>
 		</section>
 
