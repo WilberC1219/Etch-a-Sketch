@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Etch a sketch</title>
-		<link href="styles.css" rel="stylesheet">
-		<script type="text/javascript" src="etch-a-sketch.js" defer></script>
-	</head>
-	<body>
-		<main>
-			<header>
-				<h1>Etch A Sketch</h1>
-			</header>
-			<section>
-				<!-- Sketch area -->
-				<div class="sketch-zone" id="sketch-zone"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Etch a sketch</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="etch-a-sketch.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Etch A Sketch</h1>
+      </header>
+      <section>
+        <!-- Sketch area -->
+        <div class="sketch-zone" id="sketch-zone"></div>
+      </section>
+    </main>
 
-			</section>
-		</main>
+    <section class="grid-options">
+      <div class="grid-size">
+        <label>Grid size: <span name="grid-size-span"></span></label>
+        <input
+          class="slider"
+          name="grid-size-input"
+          type="range"
+          min="1"
+          max="64"
+          value="16"
+        />
+      </div>
 
-		<section class="grid-options">
-			<div class="grid-size">
-				<label >Grid size: <span name="grid-size-span"></span></label>
-				<input class ="slider" name="grid-size-input" type="range" min="1" max="64" value="16">
-			</div>
+      <div class="mode-options">
+        <legend>Color Mode</legend>
 
-			<div class="mode-options">
-				<legend>Color Mode</legend>
+        <fieldset>
+          <div class="mode-choice">
+            <label for="rgb-choice">rgb</label>
+            <input
+              type="radio"
+              id="rgb-choice"
+              name="mode-choice"
+              value="rgb"
+            />
+          </div>
+          <div class="mode-choice">
+            <label for="normal-choice">normal</label>
+            <input
+              type="radio"
+              id="normal-choice"
+              name="mode-choice"
+              value="normal"
+            />
+          </div>
+          <div class="mode-choice">
+            <label for="eraser-choice">eraser</label>
+            <input
+              type="radio"
+              id="eraser-choice"
+              name="mode-choice"
+              value="eraser"
+            />
+          </div>
+        </fieldset>
+      </div>
 
-				<fieldset>
-					<div class="mode-choice">
-						<label for="rgb-choice">rgb</label>
-						<input type="radio" id="rgb-choice" name="mode-choice" value="rgb">
-					</div>
-					<div class="mode-choice">
-						<label for="normal-choice">normal</label>
-						<input type="radio" id="normal-choice" name="mode-choice" value="normal">
-					</div>	
-					<div class="mode-choice">
-						<label for="eraser-choice">eraser</label>
-						<input type="radio" id="eraser-choice" name="mode-choice" value="eraser">
-					</div>	
-				</fieldset>
+      <div>
+        <button name="reset">reset</button>
+      </div>
+    </section>
 
-			</div>
-
-			<div>
-				<button name="reset">reset</button>
-			</div>
-		</section>
-
-	</body>
+    <!-- Page Footer-->
+    <footer>
+      <small>
+        Copyright &#169;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        WilberC1219
+      </small>
+      <a href="https://github.com/WilberC1219" target="_blank">
+        <i class="fa fa-github github-icon"> </i>
+      </a>
+    </footer>
+  </body>
 </html>
