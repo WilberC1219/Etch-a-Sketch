@@ -10,7 +10,13 @@ html {
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fffdd0e5;
+    min-height: 100vh;
+    gap: 15px;
 }
 
 main{
@@ -30,6 +36,7 @@ header{
     justify-content: center;
     font-size: 36px;
     margin-top: 27px;
+    text-align: center;
 }
 
 button{
@@ -43,6 +50,21 @@ button{
 
 button:hover{
   background-color: #DADADA;
+}
+
+footer{
+  box-sizing: border-box;
+  height: auto;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 15px;
+}
+
+a{
+  color: black;
+}
+a:hover{
+  color: red;
 }
 
 .sketch-zone{
